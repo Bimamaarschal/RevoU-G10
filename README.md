@@ -28,10 +28,10 @@ Proyek ini dibangun dengan beberapa teknologi inti, termasuk:
 ## Cara Menggunakan
 
 1. Pastikan Anda memiliki Node.js dan MongoDB terpasang di komputer Anda.
-2. Clone repositori ini: `git clone https://github.com/nama_pengguna/repo.git`
-3. Masuk ke direktori proyek: `cd nama_folder`
+2. Clone repositori ini: `git clone https://github.com/Bimamaarschal/XGrow.git`
+3. Masuk ke direktori proyek: `cd XGrow`
 4. Instal dependensi: `npm install`
-5. Jalankan server: `node server.js`
+5. Jalankan server: `node app.js`
 6. Buka browser dan akses: `http://localhost:3000`
 
 ## Kontribusi
