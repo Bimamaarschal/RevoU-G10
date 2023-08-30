@@ -295,6 +295,7 @@ Style - Tampilan - 3
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
   padding: 0 10px;
   max-width: 1500px;
   margin: 0 auto;
@@ -306,7 +307,7 @@ Style - Tampilan - 3
   padding: 20px;
   margin: 20px;
   text-align: center;
-  background-color: #fff;
+  background-color: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
 }
 
 .kartu-tampil3-10smg img {
