@@ -11,7 +11,7 @@ Selamat datang di repositori untuk proyek Website Company Profil Kursus Edukasi 
 Proyek ini bertujuan untuk memberikan platform pembelajaran yang interaktif dan mudah diakses bagi semua orang yang tertarik untuk belajar tentang pengembangan web dengan menggunakan Node.js dan Express.
 Kami telah merancang kursus-kursus yang dirancang dengan baik, yang mencakup berbagai tingkat keahlian, mulai dari pemula hingga lanjutan.
 
-## Cara Menggunakan
+## Cara Running/mejalankanya
 
 1. Pastikan Anda memiliki/memasang Node.js dan SQL DB terpasang di komputer Anda.
 2. Pastikan GIT sudah terinstal di komputer Anda.
