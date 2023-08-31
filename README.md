@@ -11,6 +11,17 @@ Selamat datang di repositori untuk proyek Website Company Profil Kursus Edukasi 
 Proyek ini bertujuan untuk memberikan platform pembelajaran yang interaktif dan mudah diakses bagi semua orang yang tertarik untuk belajar tentang pengembangan web dengan menggunakan Node.js dan Express.
 Kami telah merancang kursus-kursus yang dirancang dengan baik, yang mencakup berbagai tingkat keahlian, mulai dari pemula hingga lanjutan.
 
+## Cara Running/mejalankanya
+
+1. Pastikan Anda memiliki/memasang Node.js dan SQL DB terpasang di komputer Anda.
+2. Pastikan GIT sudah terinstal di komputer Anda.
+3. Clone repositori ini: `git clone https://github.com/Bimamaarschal/XGrow.git` (Copy link ini di CMD / Git Bash)
+4. Masuk ke direktori proyek: `cd XGrow` (Setelah di clone barulah CD ke direktorinya, masih di CMD)
+5. Instal dependensi: `npm install` (Masih di dalam CMD)
+6. Jalankan server: `node app.js`  (Masih di dalam CMD)
+7. Buka browser dan akses: `http://localhost:3000` (Copy link di Browser)
+
+
 ## Fitur Utama
 
 - Materi pembelajaran dalam format yang mudah dipahami.
@@ -27,15 +38,6 @@ Proyek ini dibangun dengan beberapa teknologi inti, termasuk:
 - **Express:** Kerangka kerja web yang minimalis untuk Node.js, mempermudah pembuatan API dan aplikasi web.
 - **SQL:** Basis data SQL untuk menyimpan dan mengelola data proyek.
 - **HTML, CSS, dan JavaScript:** Teknologi dasar untuk membangun antarmuka pengguna yang menarik dan responsif.
-
-## Cara Menggunakan
-
-1. Pastikan Anda memiliki/memasang Node.js dan SQL DB terpasang di komputer Anda.
-2. Clone repositori ini: `git clone https://github.com/Bimamaarschal/XGrow.git`
-3. Masuk ke direktori proyek: `cd XGrow`
-4. Instal dependensi: `npm install`
-5. Jalankan server: `node app.js`
-6. Buka browser dan akses: `http://localhost:3000`
 
 ## Kontribusi
 
