@@ -2,12 +2,9 @@
 const express = require('express');
 const mysql = require('mysql2'); // Ganti dari 'mysql' ke 'mysql2'
 const path = require('path');
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// URL Koneksi MySQL dari Railway
-const dbURL = 'mysql://root:EcxAFLawCOUPHGQ1uvCe@containers-us-west-182.railway.app:6388/railway';
 
 // Konfigurasi koneksi ke database di Railway
 const db = mysql.createConnection({
@@ -20,9 +17,9 @@ const db = mysql.createConnection({
 
 db.connect((err) => {
   if (err) {
-    console.error('Error connecting to database:', err);
+    console.error('Koneksi Database Railway Eror', err);
   } else {
-    console.log('Connected to the database');
+    console.log('Database terkoneksi');
   }
 });
 
@@ -38,15 +35,16 @@ app.get('/', (req, res) => {
 
 // Endpoint untuk membuat data baru
 app.post('/createItem', (req, res) => {
+  const timestamp = BigInt(Date.now()); // Mendapatkan timestamp saat ini sebagai BIGINT
   const name = req.body.name;
 
-  const sql = 'INSERT INTO items (name) VALUES (?)';
-  db.query(sql, [name], (err, result) => {
+  const sql = 'INSERT INTO items (id, name) VALUES (?, ?)';
+  db.query(sql, [timestamp, name], (err, result) => {
     if (err) {
       console.error('Error creating item:', err);
       res.status(500).json({ message: 'Error creating item' });
     } else {
-      const newItem = { id: result.insertId, name: name };
+      const newItem = { id: timestamp.toString(), name: name };
       res.status(201).json(newItem);
     }
   });
